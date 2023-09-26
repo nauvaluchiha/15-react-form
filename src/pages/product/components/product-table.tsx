@@ -1,5 +1,5 @@
+import React from "react";
 import { Cell, ColumnDef, flexRender, getCoreRowModel, useReactTable } from "@tanstack/react-table";
-import { useEffect } from "react";
 import {
   Table,
   TableBody,
@@ -8,7 +8,6 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import React from "react";
 
 interface CellComponentProps<TData> {
   cell: Cell<TData, unknown>;
@@ -26,10 +25,6 @@ export const ProductTable = React.memo(<TData, TValue>({
     data,
     columns,
     getCoreRowModel: getCoreRowModel(),
-  });
-
-  useEffect(() => {
-    console.log("tes");
   });
 
   return (
