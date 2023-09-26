@@ -146,7 +146,6 @@ export function ProductForm() {
 
                       Array.from(event.target.files!).forEach((image) => {
                         dataTransfer.items.add(image);
-                        console.log(image);
                       });
 
                       const newFiles = dataTransfer.files;
