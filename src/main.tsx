@@ -6,6 +6,13 @@ import "./global.css";
 import { Provider } from "react-redux";
 import { store } from "./stores/store.ts";
 
+if ('serviceWorker' in navigator) {
+  // console.log('Service worker supported');
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js')
+  });
+}
+
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
