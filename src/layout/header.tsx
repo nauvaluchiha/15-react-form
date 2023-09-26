@@ -43,7 +43,7 @@ export function Header() {
             <ul className="font-medium flex flex-col p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row lg:space-x-8 lg:mt-0 lg:border-0 lg:bg-white dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700">
               <li className="">
                 <Link
-                  to="/home"
+                  to="/"
                   className="block text-center py-2 pl-4 pr-4 text-white bg-blue-500 rounded dark:text-white"
                   aria-current="page"
                 >
